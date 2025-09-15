@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Run
-      run: curl $NOTIFICATON_URL -d 'Test github actions schedule'
+      run: curl $NOTIFICATION_URL -d 'Test github actions schedule'
       env:
-        NOTIFICATON_URL: ${{ secrets.NOTIFICATON_URL }}
+        NOTIFICATION_URL: ${{ secrets.NOTIFICATION_URL }}
